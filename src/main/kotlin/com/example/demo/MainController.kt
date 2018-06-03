@@ -13,13 +13,13 @@ class MainController {
 
     @RequestMapping("/")
     fun index():String{
-        return "Hello World"
+        return "Hello PostGres Demo"
     }
 
     @RequestMapping("/add")
     fun add(@RequestParam firstName:String,@RequestParam lastName:String):String{
         customerDao.save(Customer(firstName,lastName))
-        return "Hello World"
+        return "Saved Another Record"
     }
 
     @RequestMapping("/get")
