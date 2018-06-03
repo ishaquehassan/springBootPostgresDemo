@@ -13,7 +13,7 @@ class MainController {
 
     @RequestMapping("/")
     fun index():String{
-        return "Hello PostGres Demo"
+        return "Hello PostGres Demo World"
     }
 
     @RequestMapping("/add")
